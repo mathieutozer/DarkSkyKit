@@ -1,12 +1,12 @@
 import Foundation
 
 public struct ForecastAlert {
-    var title: String?
-    var expires: NSDate?
-    var description: String?
-    var uri: String?
+    public var title: String?
+    public var expires: NSDate?
+    public var description: String?
+    public var uri: String?
 
-    static func map(data: [String: AnyObject]) -> ForecastAlert {
+    public static func map(data: [String: AnyObject]) -> ForecastAlert {
         var a = ForecastAlert()
         a.title = data["title"] as? String ?? nil
         a.expires = NSDate(time: data["expires"] as? Double)

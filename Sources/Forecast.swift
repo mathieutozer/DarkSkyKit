@@ -1,18 +1,18 @@
 import Foundation
 
 public struct Forecast {
-    var latitude: Double
-    var longitude: Double
-    var timezone: String
-    var offset: Int
-    var currently: ForecastDataPoint?
-    var minutely: [ForecastDataPoint]?
-    var hourly: [ForecastDataPoint]?
-    var daily: [ForecastDataPoint]?
-    var alerts: [ForecastAlert]?
-    var flags: ForecastFlags?
+    public var latitude: Double
+    public var longitude: Double
+    public var timezone: String
+    public var offset: Int
+    public var currently: ForecastDataPoint?
+    public var minutely: [ForecastDataPoint]?
+    public var hourly: [ForecastDataPoint]?
+    public var daily: [ForecastDataPoint]?
+    public var alerts: [ForecastAlert]?
+    public var flags: ForecastFlags?
     
-    init(data: [String:AnyObject]) {
+    public init(data: [String:AnyObject]) {
         self.latitude = data["latitude"] as? Double ?? 0
         self.longitude = data["longitude"] as? Double ?? 0
         self.timezone = data["timezone"] as? String ?? ""

@@ -1,40 +1,40 @@
 import Foundation
 
 public struct ForecastDataPoint {
-    var time: NSDate?
-    var summary: String?
-    var icon: String?
-    var sunriseTime: NSDate?
-    var sunsetTime: NSDate?
-    var moonPhase: Double?
-    var nearestStormDistance: Double?
-    var nearestStormBearing: Double?
-    var precipIntensity: Double?
-    var precipIntensityMax: Double?
-    var precipIntensityMaxTime: NSDate?
-    var precipProbability: Double?
-    var precipType: String?
-    var precipAccumulation: Double?
-    var temperature: Double?
-    var temperatureMin: Double?
-    var temperatureMinTime: NSDate?
-    var temperatureMax: Double?
-    var temperatureMaxTime: NSDate?
-    var apparentTemperature: Double?
-    var apparentTemperatureMin: Double?
-    var apparentTemperatureMinTime: NSDate?
-    var apparentTemperatureMax: Double?
-    var apparentTemperatureMaxTime: NSDate?
-    var dewPoint: Double?
-    var windSpeed: Double?
-    var windBearing: Double?
-    var cloudCover: Double?
-    var humidity: Double?
-    var pressure: Double?
-    var visibility: Double?
-    var ozone: Double?
+    public var time: NSDate?
+    public var summary: String?
+    public var icon: String?
+    public var sunriseTime: NSDate?
+    public var sunsetTime: NSDate?
+    public var moonPhase: Double?
+    public var nearestStormDistance: Double?
+    public var nearestStormBearing: Double?
+    public var precipIntensity: Double?
+    public var precipIntensityMax: Double?
+    public var precipIntensityMaxTime: NSDate?
+    public var precipProbability: Double?
+    public var precipType: String?
+    public var precipAccumulation: Double?
+    public var temperature: Double?
+    public var temperatureMin: Double?
+    public var temperatureMinTime: NSDate?
+    public var temperatureMax: Double?
+    public var temperatureMaxTime: NSDate?
+    public var apparentTemperature: Double?
+    public var apparentTemperatureMin: Double?
+    public var apparentTemperatureMinTime: NSDate?
+    public var apparentTemperatureMax: Double?
+    public var apparentTemperatureMaxTime: NSDate?
+    public var dewPoint: Double?
+    public var windSpeed: Double?
+    public var windBearing: Double?
+    public var cloudCover: Double?
+    public var humidity: Double?
+    public var pressure: Double?
+    public var visibility: Double?
+    public var ozone: Double?
     
-    static func map(data: [String: AnyObject]) -> ForecastDataPoint {
+    public static func map(data: [String: AnyObject]) -> ForecastDataPoint {
         var p = ForecastDataPoint()
         p.time = NSDate(time: data["time"] as? Double)
         p.summary = data["summary"] as? String ?? ""
