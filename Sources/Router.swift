@@ -2,13 +2,22 @@ import Foundation
 import Alamofire
 
 enum Router: URLRequestConvertible {
+    /// Returns a URL request or throws if an `Error` was encountered.
+    ///
+    /// - throws: An `Error` if the underlying `URLRequest` is `nil`.
+    ///
+    /// - returns: A URL request.
+    public func asURLRequest() throws -> URLRequest {
+        return self.urlRequest as URLRequest
+    }
+
     private static let baseURLString = "https://api.darksky.net"
 
     case Current(Configuration, Double, Double)
     case TimeMachine(Configuration, Double, Double, NSDate)
 
-    var method: Alamofire.Method {
-        return .GET
+    var method: HTTPMethod {
+        return .get
     }
 
     var path: String {
@@ -19,8 +28,16 @@ enum Router: URLRequestConvertible {
             return "/forecast/\(c.token)/\(lat),\(long),\(date.timeIntervalSince1970)"
         }
     }
+    
+    var urlString: String {
+        return Router.baseURLString+self.path
+    }
+    
+    var url: URL {
+        return URL(string: self.urlString)!
+    }
 
-    var params: [String: AnyObject] {
+    var params: Parameters {
         var configuration: Configuration
         switch self {
         case .Current(let c, _, _):
@@ -29,7 +46,7 @@ enum Router: URLRequestConvertible {
             configuration = c
         }
 
-        var parameters = [String: AnyObject]()
+        var parameters = Parameters()
         if let units = configuration.units {
             parameters.updateValue(units.rawValue, forKey: "units")
         }
@@ -45,10 +62,11 @@ enum Router: URLRequestConvertible {
         return parameters
     }
 
-    var URLRequest: NSMutableURLRequest {
-        let URL = NSURL(string: Router.baseURLString)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path)!)
-        mutableURLRequest.HTTPMethod = method.rawValue
-        return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: self.params).0
+    var urlRequest: URLRequest {
+        let url = URL(string: Router.baseURLString)!
+        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+        urlRequest.httpMethod = method.rawValue
+        //        return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: self.params).0
+        return try! Alamofire.URLEncoding().encode(urlRequest as URLRequestConvertible, with: params)
     }
 }

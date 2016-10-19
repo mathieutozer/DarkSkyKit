@@ -19,7 +19,7 @@ public struct Forecast {
         self.offset = data["offset"] as? Int ?? 0
         
         if let currently = data["currently"] as? [String: AnyObject] {
-            self.currently = ForecastDataPoint.map(currently)
+            self.currently = ForecastDataPoint.map(data: currently)
         }
         
         if let minutely = data["minutely"] as? [[String: AnyObject]] {
@@ -39,7 +39,7 @@ public struct Forecast {
         }
         
         if let flags = data["hoflagsurly"] as? [String: AnyObject] {
-            self.flags = ForecastFlags.map(flags)
+            self.flags = ForecastFlags.map(data: flags)
         }
     }
 }
