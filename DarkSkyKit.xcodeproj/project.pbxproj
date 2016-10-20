@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5525DC861D3D8ACA00D3967C /* DarkSkyKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5525DC7C1D3D8ACA00D3967C /* DarkSkyKitExample.framework */; };
+		6414AA171DB8C4D5000B857D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6414AA161DB8C4D5000B857D /* AppDelegate.swift */; };
+		6414AA191DB8C4D5000B857D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6414AA181DB8C4D5000B857D /* Assets.xcassets */; };
+		6414AA1C1DB8C4D5000B857D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6414AA1A1DB8C4D5000B857D /* MainMenu.xib */; };
+		6414AA211DB8C59B000B857D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021891DB7787A00F94644 /* Configuration.swift */; };
+		6414AA221DB8C59B000B857D /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0218A1DB7787A00F94644 /* Current.swift */; };
+		6414AA231DB8C59B000B857D /* DarkSkyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0218B1DB7787A00F94644 /* DarkSkyKit.swift */; };
+		6414AA241DB8C59B000B857D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0218C1DB7787A00F94644 /* Router.swift */; };
+		6414AA251DB8C59B000B857D /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0218D1DB7787A00F94644 /* TimeMachine.swift */; };
+		6414AA261DB8C59F000B857D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021BC1DB7797400F94644 /* Forecast.swift */; };
+		6414AA271DB8C59F000B857D /* ForecastAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021771DB7786400F94644 /* ForecastAlert.swift */; };
+		6414AA281DB8C59F000B857D /* ForecastDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021781DB7786400F94644 /* ForecastDataPoint.swift */; };
+		6414AA291DB8C59F000B857D /* ForecastFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021791DB7786400F94644 /* ForecastFlags.swift */; };
 		6418039C1DB76E5700504898 /* DarkSkyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648AD6A51DB754FE00C63C3F /* DarkSkyKit.framework */; };
 		64E0217A1DB7786400F94644 /* ForecastAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021771DB7786400F94644 /* ForecastAlert.swift */; };
 		64E0217B1DB7786400F94644 /* ForecastAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E021771DB7786400F94644 /* ForecastAlert.swift */; };
@@ -90,6 +102,11 @@
 		39C1E25F35A04708AEEBE999 /* Pods_DarkSkyKitExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkSkyKitExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5525DC7C1D3D8ACA00D3967C /* DarkSkyKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkSkyKitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5525DC851D3D8ACA00D3967C /* DarkSkyKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkSkyKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6414AA141DB8C4D4000B857D /* DarkSkyTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSkyTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6414AA161DB8C4D5000B857D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6414AA181DB8C4D5000B857D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6414AA1B1DB8C4D5000B857D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6414AA1D1DB8C4D5000B857D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		641803971DB76E5700504898 /* DarkSkyKit-OSX-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DarkSkyKit-OSX-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		648AD6981DB7549000C63C3F /* DarkSkyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkSkyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		648AD6A51DB754FE00C63C3F /* DarkSkyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkSkyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +151,13 @@
 			files = (
 				5525DC861D3D8ACA00D3967C /* DarkSkyKitExample.framework in Frameworks */,
 				D5E32BD5105B038CA4A10B05 /* Pods_DarkSkyKitExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6414AA111DB8C4D4000B857D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +215,7 @@
 				5525DC561D3D89FF00D3967C /* DarkSkyKit */,
 				55B43F351D8AD9640000B3D3 /* SupportingFiles */,
 				5525DC6B1D3D89FF00D3967C /* DarkSkyKitTests */,
+				6414AA151DB8C4D5000B857D /* DarkSkyTester */,
 				5525DC551D3D89FF00D3967C /* Products */,
 				B3EBC7B04F4CFC7939EC6614 /* Pods */,
 				BBEA6A2ED8C69CC013A4DE5E /* Frameworks */,
@@ -205,6 +230,7 @@
 				648AD6981DB7549000C63C3F /* DarkSkyKit.framework */,
 				648AD6A51DB754FE00C63C3F /* DarkSkyKit.framework */,
 				641803971DB76E5700504898 /* DarkSkyKit-OSX-Tests.xctest */,
+				6414AA141DB8C4D4000B857D /* DarkSkyTester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +269,17 @@
 				64E021A91DB7789900F94644 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6414AA151DB8C4D5000B857D /* DarkSkyTester */ = {
+			isa = PBXGroup;
+			children = (
+				6414AA161DB8C4D5000B857D /* AppDelegate.swift */,
+				6414AA181DB8C4D5000B857D /* Assets.xcassets */,
+				6414AA1A1DB8C4D5000B857D /* MainMenu.xib */,
+				6414AA1D1DB8C4D5000B857D /* Info.plist */,
+			);
+			path = DarkSkyTester;
 			sourceTree = "<group>";
 		};
 		B3EBC7B04F4CFC7939EC6614 /* Pods */ = {
@@ -333,6 +370,24 @@
 			productReference = 5525DC851D3D8ACA00D3967C /* DarkSkyKitExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6414AA131DB8C4D4000B857D /* DarkSkyTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6414AA201DB8C4D5000B857D /* Build configuration list for PBXNativeTarget "DarkSkyTester" */;
+			buildPhases = (
+				6414AA101DB8C4D4000B857D /* Sources */,
+				6414AA111DB8C4D4000B857D /* Frameworks */,
+				6414AA121DB8C4D4000B857D /* Resources */,
+				6414AA2A1DB8C5F4000B857D /* Carthage Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkSkyTester;
+			productName = DarkSkyTester;
+			productReference = 6414AA141DB8C4D4000B857D /* DarkSkyTester.app */;
+			productType = "com.apple.product-type.application";
+		};
 		641803961DB76E5700504898 /* DarkSkyKit-OSX-Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6418039F1DB76E5700504898 /* Build configuration list for PBXNativeTarget "DarkSkyKit-OSX-Tests" */;
@@ -404,6 +459,11 @@
 					5525DC841D3D8ACA00D3967C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					6414AA131DB8C4D4000B857D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XZ582BS8LF;
+						ProvisioningStyle = Automatic;
+					};
 					641803961DB76E5700504898 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -436,6 +496,7 @@
 				648AD6971DB7549000C63C3F /* DarkSkyKit-iOS */,
 				648AD6A41DB754FE00C63C3F /* DarkSkyKit-OSX */,
 				641803961DB76E5700504898 /* DarkSkyKit-OSX-Tests */,
+				6414AA131DB8C4D4000B857D /* DarkSkyTester */,
 			);
 		};
 /* End PBXProject section */
@@ -454,6 +515,15 @@
 			files = (
 				64E021B71DB778C200F94644 /* Info-OSX-Tests.plist in Resources */,
 				64E021BA1DB778D300F94644 /* flags.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6414AA121DB8C4D4000B857D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6414AA191DB8C4D5000B857D /* Assets.xcassets in Resources */,
+				6414AA1C1DB8C4D5000B857D /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +582,21 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DarkSkyKitExampleTests/Pods-DarkSkyKitExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6414AA2A1DB8C5F4000B857D /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export BUILT_PRODUCTS_DIR=$TARGET_BUILD_DIR\n/usr/local/bin/carthage copy-frameworks";
 		};
 		643814D51DB7756100C0AF97 /* Carthage Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -611,6 +696,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6414AA101DB8C4D4000B857D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6414AA291DB8C59F000B857D /* ForecastFlags.swift in Sources */,
+				6414AA281DB8C59F000B857D /* ForecastDataPoint.swift in Sources */,
+				6414AA231DB8C59B000B857D /* DarkSkyKit.swift in Sources */,
+				6414AA221DB8C59B000B857D /* Current.swift in Sources */,
+				6414AA261DB8C59F000B857D /* Forecast.swift in Sources */,
+				6414AA251DB8C59B000B857D /* TimeMachine.swift in Sources */,
+				6414AA241DB8C59B000B857D /* Router.swift in Sources */,
+				6414AA271DB8C59F000B857D /* ForecastAlert.swift in Sources */,
+				6414AA211DB8C59B000B857D /* Configuration.swift in Sources */,
+				6414AA171DB8C4D5000B857D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		641803931DB76E5700504898 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,6 +778,17 @@
 			targetProxy = 6418039D1DB76E5700504898 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6414AA1A1DB8C4D5000B857D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6414AA1B1DB8C4D5000B857D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5525DC6F1D3D89FF00D3967C /* Debug */ = {
@@ -843,6 +956,47 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergigracia.DarkSkyKitExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6414AA1E1DB8C4D5000B857D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XZ582BS8LF;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = DarkSkyTester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.DarkSkyTester";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6414AA1F1DB8C4D5000B857D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XZ582BS8LF;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = DarkSkyTester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.DarkSkyTester";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1030,6 +1184,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6414AA201DB8C4D5000B857D /* Build configuration list for PBXNativeTarget "DarkSkyTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6414AA1E1DB8C4D5000B857D /* Debug */,
+				6414AA1F1DB8C4D5000B857D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		6418039F1DB76E5700504898 /* Build configuration list for PBXNativeTarget "DarkSkyKit-OSX-Tests" */ = {
 			isa = XCConfigurationList;

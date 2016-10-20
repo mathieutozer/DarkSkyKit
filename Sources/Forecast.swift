@@ -22,16 +22,16 @@ public struct Forecast {
             self.currently = ForecastDataPoint.map(data: currently)
         }
         
-        if let minutely = data["minutely"] as? [[String: AnyObject]] {
-            self.minutely = minutely.map(ForecastDataPoint.map)
+        if let minutely = data["minutely"] as? [String: AnyObject], let data = minutely["data"] as? [[String: AnyObject]] {
+            self.minutely = data.map(ForecastDataPoint.map)
         }
         
-        if let hourly = data["hourly"] as? [[String: AnyObject]] {
-            self.hourly = hourly.map(ForecastDataPoint.map)
+        if let hourly = data["hourly"] as? [String: AnyObject], let data = hourly["data"] as? [[String: AnyObject]] {
+            self.hourly = data.map(ForecastDataPoint.map)
         }
         
-        if let daily = data["daily"] as? [[String: AnyObject]] {
-            self.daily = daily.map(ForecastDataPoint.map)
+        if let daily = data["daily"] as? [String: AnyObject], let data = daily["data"] as? [[String: AnyObject]] {
+            self.daily = data.map(ForecastDataPoint.map)
         }
         
         if let alerts = data["alerts"] as? [[String: AnyObject]] {
