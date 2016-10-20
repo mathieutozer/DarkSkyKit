@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-enum Router: URLRequestConvertible {
+public enum Router: URLRequestConvertible {
     /// Returns a URL request or throws if an `Error` was encountered.
     ///
     /// - throws: An `Error` if the underlying `URLRequest` is `nil`.
