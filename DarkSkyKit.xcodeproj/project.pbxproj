@@ -1086,7 +1086,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.DarkSkyKit-iOS";
 				PRODUCT_NAME = DarkSkyKit;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1192,6 +1192,7 @@
 				6414AA1F1DB8C4D5000B857D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6418039F1DB76E5700504898 /* Build configuration list for PBXNativeTarget "DarkSkyKit-OSX-Tests" */ = {
 			isa = XCConfigurationList;
