@@ -27,6 +27,7 @@ public struct ForecastDataPoint {
     public var apparentTemperatureMaxTime: NSDate?
     public var dewPoint: Double?
     public var windSpeed: Double?
+    public var windGust: Double?
     public var windBearing: Double?
     public var cloudCover: Double?
     public var humidity: Double?
@@ -62,6 +63,7 @@ public struct ForecastDataPoint {
         p.apparentTemperatureMaxTime = NSDate(time: data["apparentTemperatureMaxTime"] as? Double)
         p.dewPoint = data["dewPoint"] as? Double ?? nil
         p.windSpeed = data["windSpeed"] as? Double ?? nil
+        p.windGust = data["windGust"] as? Double ?? nil
         p.windBearing = data["windBearing"] as? Double ?? nil
         p.cloudCover = data["cloudCover"] as? Double ?? nil
         p.humidity = data["humidity"] as? Double ?? nil
