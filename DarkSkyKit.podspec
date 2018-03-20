@@ -11,7 +11,7 @@ Swift client for darksky.net API
   s.author           = { 'Caramba.io' => 'hello@caramba.io' }
   s.source           = { :git => 'https://github.com/carambalabs/DarkSkyKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'DarkSkyKit/**/*'
+  s.source_files = 'Sources/**/*'
   s.dependency 'Alamofire', '~> 4.0'
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
